@@ -68,7 +68,7 @@ Java_moe_madoka_umapyogin_1android_UmaPyogin_initHook(JNIEnv *env, jclass clazz,
             .RaceJikkyoMessageDataDictPath = basePathStr + "/database/race_jikkyo_message.json",
             .ExtraAssetBundlePath = basePathStr + "/resources/umamusumelocalify",
             .ReplaceFontPath = "assets/bundledassets/umamusumelocalify/fonts/MSYH.TTC",
-            .OverrideFPS = unlock_fps ? 60 : 0,
+            .OverrideFPS = unlock_fps ? 120 : 0,
     });
     plugin.InstallHook(std::make_unique<AndroidHookInstaller>(targetLibraryPathStr));
 }
