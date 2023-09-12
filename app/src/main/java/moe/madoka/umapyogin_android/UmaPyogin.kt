@@ -12,7 +12,7 @@ import java.io.InputStream
 
 class UmaPyogin : IXposedHookLoadPackage, IXposedHookZygoteInit {
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
-        if (lpparam.packageName != "jp.co.cygames.umamusume") {
+        if (lpparam.packageName != "jp.co.cygames.umamusume" && lpparam.packageName != "com.komoe.kmumamusumegp" && lpparam.packageName != "com.bilibili.umamusu") {
             return
         }
 
