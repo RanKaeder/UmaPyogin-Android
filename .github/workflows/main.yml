@@ -1,4 +1,4 @@
-name: My Android CI
+name: My Android CI 2024.1
 
 on: [push, pull_request]
 
